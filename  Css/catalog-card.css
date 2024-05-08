@@ -1,0 +1,325 @@
+body{
+    font-family: 'Monsterrat', sans-serif;
+    background: url(../img/bg.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    max-width: 1390px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #EDECF6;
+    padding-top: 12px;
+    padding-bottom: 21px;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.logo{
+    padding-right: 85px;
+}
+.nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    padding-right: 40px;
+}
+.nav-item:hover {
+    color: #aaa8f0; 
+    transition: color 0.5s;
+}
+.menu-form {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+.form-item:hover {
+    color: #aaa8f0; 
+    transition: color 0.5s;
+}
+.form-item{
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+.menu-item:last-child .menu-img {
+    padding-right: 0;
+}
+.form-item:last-child .menu-img {
+    padding-right: 0;
+}
+.basket-btn{
+  background-color: white;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    color: #515076;
+}
+
+main{
+    flex-grow: 1;
+}
+.container-title{
+    width: 100%;
+
+}
+
+.products {
+    margin-top: 10vh; 
+    margin-bottom: 10vh; 
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.catalog-card {
+    font-weight: lighter; 
+    font-size: 5em; 
+    line-height: 3em; 
+    color: #757AA5;
+    text-align: center;
+    border-bottom: 2px solid #515076; 
+    border-radius: 1px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw; 
+    margin: auto; 
+    text-align: left;
+    background-color: #F7F7FA;
+    border-radius: 3em; 
+    padding: 1em; 
+}
+
+.product-image {
+    width: 100%; 
+    height: 30vh; 
+    border-radius: 3em; 
+}
+
+.product-title {
+    margin-top: 1em;
+    margin-bottom: 0.5em; 
+    font-size: 2em; 
+    line-height: 1.5em; 
+    font-weight: 100;
+}
+
+.product-description {
+    font-size: 1.3em; 
+    color: #888794;
+    margin-top: 1em;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70vw; 
+}
+
+.review-form {
+    background-color: #F7F7FA; 
+    border-radius: 1vh;
+    padding: 2vh;
+    width: 60%; 
+    margin: 0 auto; 
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.review-form h3 {
+    color: #515076;
+    margin-bottom: 2vh;
+}
+
+.review-form form {
+    width: 100%;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.review-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #515076;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #3a3a5f;
+}
+
+.reviews {
+    color:#757AA5;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.reviews h3 {
+    color: #515076;
+    margin-bottom: 20px;
+}
+
+.review {
+    border: 1px solid #515076;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.review .review-author {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review .review-text {
+    color: #888794;
+}
+.uploaded-image {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 10px;
+}
+.upload-label {
+    background-color:#aaa8f0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-label:hover {
+    background-color:#afadff;
+}
+
+#selected-file {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+    margin-top: 10px; /* Добавляем отступ сверху */
+    margin-bottom: 10px; /* Добавляем отступ снизу */
+}
+.rating > span {
+    display: inline-block;
+    padding: 0 5px; /* Добавляем отступы слева и справа */
+    font-size: 2em;
+    line-height: 1;
+    cursor: pointer;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+    color: transparent;
+}
+.rating > span.selected {
+    color: orange;
+}
+.rating-title {
+    text-align: left;
+    margin-bottom: 5px; /* Добавляем отступ снизу */
+}
+.review-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.review-rating {
+    font-size: 2em;
+}
+.review-image {
+    max-width: 100px;
+    height: auto;
+}
+.review-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.review-rating {
+    font-size: 2em;
+}
+.review-image {
+    max-width: 100px;
+    height: auto;
+}
+
+.review-item {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.review-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    background-color: #EDECF6;
+    color: black;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title{
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 200;
+    padding: 20px;
+}

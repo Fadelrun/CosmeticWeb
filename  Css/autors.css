@@ -1,0 +1,161 @@
+body{
+    font-family: 'Monsterrat', sans-serif;
+    background: url(../img/bg.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    max-width: 1390px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #EDECF6;
+    padding-top: 12px;
+    padding-bottom: 21px;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Устанавливаем z-index, чтобы заголовок оставался поверх других элементов */
+}
+
+.logo{
+    padding-right: 85px;
+}
+.nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    padding-right: 40px;
+}
+.nav-item:hover {
+    color: #aaa8f0; /* Яркий цвет при наведении */
+    transition: color 0.5s;
+}
+.menu-form {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+.form-item:hover {
+    color: #aaa8f0; /* Яркий цвет при наведении */
+    transition: color 0.5s;
+}
+.form-item{
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+.menu-item:last-child .menu-img {
+    padding-right: 0;
+}
+.form-item:last-child .menu-img {
+    padding-right: 0;
+}
+.basket-btn{
+  background-color: white;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    color: #515076;
+}
+
+main{
+    flex-grow: 1;
+}
+.container-title{
+    width: 100%;
+}
+
+.choose {
+    font-weight: normal; /* Установите нормальную жирность текста */
+    font-size: 70px;
+    line-height: 76px;
+    color: #757AA5;
+    text-align: center;
+}
+.author-block {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center; /* Выравниваем элементы по центру */
+    background-color: #F7F7FA; /* Цвет фона блока */
+    padding: 20px; /* Отступы внутри блока */
+    border-radius: 20px; /* Скругление углов блока */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень блока */
+}
+
+.author-image {
+    width: 50%; /* Ширина изображения будет 50% от ширины родительского блока */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    margin-right: 20px; /* Отступ справа для разделения изображения и информации */
+}
+
+.author-image img {
+    width: 30em; /* Установите одинаковую ширину для всех фотографий */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    object-fit: cover; /* Растягиваем изображение, чтобы оно полностью заполнило контейнер */
+    border-radius: 20px; /* Скругление углов изображения */
+}
+
+.author-info {
+    flex-grow: 1;
+}
+
+.author-info h2 {
+    font-size: 3em; /* Используем em для размера шрифта */
+    margin-bottom: 10px;
+    color: #515076;
+}
+
+.author-info p {
+    font-size: 1.3em; /* Используем em для размера шрифта */
+    line-height: 1.5;
+    color: #555;
+}
+
+.quote {
+    font-style: italic;
+    color: #888;
+    margin-top: 20px;
+}
+.footer {
+    background-color: #EDECF6;
+    color: black;
+    width: 100%;
+    display: block; /* Уберем фиксированное позиционирование */
+    clear: both; /* Очистим плавающие элементы */
+    padding: 10px 0; /* Увеличим отступы внутри футера */
+    text-align: center; /* Центрируем текст внутри футера */
+    position: relative; /* Вернем позиционирование по умолчанию */
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 200;
+    padding: 20px;
+}

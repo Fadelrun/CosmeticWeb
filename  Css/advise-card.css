@@ -1,0 +1,261 @@
+body{
+    font-family: 'Monsterrat', sans-serif;
+    background: url(../img/bg.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    max-width: 1390px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #EDECF6;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100%;
+    z-index: 1000;
+    min-height: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    color: #515076;
+}
+.logo{
+    padding-right: 85px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.menu{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: flex-start;
+}
+
+.nav-item{
+    padding-right: 40px;
+}
+.nav-item:hover {
+    color: #aaa8f0; 
+    transition: color 0.5s;
+}
+.menu-form {
+    display: flex;
+    align-items: center;
+}
+.form-item{
+    padding-right: 20px;
+    font-weight: 700;
+}
+.form-item:hover {
+    color: #aaa8f0; 
+    transition: color 0.5s;
+}
+
+.basket-btn {
+    background-color: white;
+    border-radius: 30%;
+    padding: 15px;
+    width: 40%;
+    height: 40%;
+}
+.basket-btn img {
+    display: block; /* Делаем изображение блочным элементом */
+    width: 100%; /* Ширина изображения равна 100% ширины родительского контейнера */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    margin: 0 auto; /* Выравниваем изображение по центру кнопки */
+}
+.advise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); 
+    padding: 60px; 
+}
+
+.advises {
+    border-top: 5px solid #515076;
+    border-radius: 6px;
+    padding: 2%; 
+    width: 80%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color: #F7F7FA;
+}
+
+.advice-block {
+    width: 100%; 
+    text-align: left;
+}
+
+.advice-item {
+    margin-bottom: 1%; 
+    padding: 1%;
+    font-size: 1vw; 
+    color: #A5A3B9;
+}
+
+.advice-item:last-child {
+    margin-bottom: 0; 
+}
+
+.advises .advise-title {
+    color: #A5A3B9;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.advises .advise-tt {
+    color: #515076;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.advises .advise-opis {
+    color: #888794;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.advises .advise-btn {
+    max-width: 50px;
+    background-color: #515076;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.footer{
+    background-color: #EDECF6;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-size: 1.5rem;
+}
+
+.footer-title{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.footer-inner{
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1450px){
+    .nav{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1350px){
+    .nav{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 1350px){
+    .menu-img{
+        margin-left: 20px;
+    }
+    .nav{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 1150px){
+    .advises .advise-title {
+        font-size: 2rem;
+    }
+    .advises .advise-tt {
+        font-size: 2.5rem;
+    }
+    
+    .advises .advise-opis {
+        font-size: 1.2rem;
+    }
+    .advises .advise-btn {
+        font-size: 1.5rem;
+    }
+    .menu-img{
+        margin-left: 20px;
+    }
+    .nav{
+        font-size: 1.4rem;
+    }
+    .footer{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 910px){
+    .nav{
+        font-size: 1rem;
+    }
+    .advises .advise-title {
+        font-size: 2.5rem;
+    }
+    
+    .advises .advise-tt {
+        font-size: 2.8rem;
+    }
+    
+    .advises .advise-opis {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 690px){
+    .basket-btn {
+        width: 30px; /* Примерная ширина кнопки при сжатии экрана */
+        height: 30px; /* Примерная высота кнопки при сжатии экрана */
+        padding: 10px; /* Примерный внутренний отступ кнопки при сжатии экрана */
+    }
+    .advises .advise-title {
+        font-size: 2rem;
+    }
+    
+    .advises .advise-tt {
+        font-size: 2.5rem;
+    }
+    
+    .advises .advise-opis {
+        font-size: 2rem;
+    }
+    .nav{
+        font-size: 1.8rem;
+    }
+    .footer{
+        font-size: 2.5rem;
+    }
+}

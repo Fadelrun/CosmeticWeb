@@ -1,0 +1,725 @@
+body{
+    font-family: 'Monsterrat', sans-serif;
+    background: url(../img/bg.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    max-width: 1390px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #EDECF6;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100%;
+    z-index: 1000;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    color: #515076;
+}
+
+.logo{
+    padding-right: 85px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.menu{
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 1;
+    justify-content: flex-start;
+}
+
+.nav-item{
+    padding-right: 40px;
+}
+.nav-item:hover {
+    color: #aaa8f0; 
+    transition: color 0.5s;
+}
+.menu-form {
+    display: flex;
+    align-items: center;
+}
+.form-item{
+    padding-right: 20px;
+    font-weight: 700;
+}
+.form-item:hover {
+    color: #aaa8f0; 
+    transition: color 0.5s;
+}
+
+.basket-btn {
+    background-color: white;
+    border-radius: 30%;
+    padding: 15px;
+    width: 40%;
+    height: 40%;
+}
+
+
+/* Иконка внутри кнопки */
+.basket-btn img {
+    display: block; /* Делаем изображение блочным элементом */
+    width: 100%; /* Ширина изображения равна 100% ширины родительского контейнера */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    margin: 0 auto; /* Выравниваем изображение по центру кнопки */
+}
+.animated {
+    opacity: 0;
+    transform: translateY(50px); /* Начальное положение элемента перед анимацией */
+    transition: opacity 1s, transform 1s;
+}
+
+.animated.active {
+    opacity: 1;
+    transform: translateY(0); /* Конечное положение элемента после анимации */
+}
+.title{
+   text-align: center;
+}
+.title-1{
+    font-family: 'Playfair Display', sans-serif;
+    color: #515076;
+    font-size: 15rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title-2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3rem;
+    line-height: 15vh;
+    color: #63678C;
+}
+
+.describe-item {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.sub-title {
+    font-size: 1.2rem;
+    line-height: 4vh;
+    color:#888794;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.title-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #515076;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1;
+    padding: 40px 80px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+.title-btn:hover {
+    opacity: 0.8;
+    color: white;
+    transition: opacity 0.5s;
+}
+.choose {
+    font-weight: normal; /* Установите нормальную жирность текста */
+    font-size: 7rem;
+    line-height: 7vh;
+    color: #757AA5;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; 
+}
+
+.product {
+    width: 30%; /* Задаем ширину карточки */
+    margin: 20px; /* Задаем отступы между карточками */
+    padding: 10px; /* Задаем внутренние отступы */
+    border-radius: 10px; /* Скругляем углы */
+    box-sizing: border-box; /* Учитываем границу в общей ширине элемента */
+    float: left; /* Выравниваем карточки по горизонтали */
+    background-color: #F7F7FA;
+}
+
+.product:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+}
+
+.product-image {
+    width: 100%; /* Ширина изображения товара */
+    height: 300px;
+    border-radius: 50px; /* Скругление углов */
+}
+
+.product-title {
+    margin-top: 10px;
+    margin-bottom: 5px; /* Отступ снизу от названия до цены */
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.product-price {
+    font-weight: bold;
+    display: inline-block; /* Размещаем цену и иконку корзины в одном ряду */
+    vertical-align: middle; /* Выравниваем по вертикали */
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+}
+
+.cart-icon {
+    width: 6%;
+    height: 6%;
+    margin-left: 65%; /* Используем относительные единицы для отступа */
+    vertical-align: middle;
+}
+
+.action{
+    background-color: #EDECF6;;
+}
+.title-girl {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20rem;
+    color: #D6D4E7;
+    text-align: center;
+    position: relative;
+    top: -200px; /* Измените это значение в соответствии с вашими потребностями */
+}
+.girl{
+    max-width: 60%; /* Устанавливаем максимальную ширину фотографии */
+    height: auto; /* Автоматический подбор высоты для сохранения пропорций */
+    float: left; /* Устанавливаем фотографию слева */
+    margin-right: -20px; /* Отступ справа от фотографии */
+    margin-top: -100px;
+}
+
+.title-woman {
+    overflow: hidden; /* Чтобы текст не выходил за пределы блока */
+    max-width: 80%; /* Устанавливаем максимальную ширину блока с текстом */
+    margin-top: -200px;
+}
+
+.woman-test{
+    color: #A5A3B9;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 5vh;
+    letter-spacing: 6px;
+}
+.woman-num{
+    color: #515076;
+    font-size: 10rem;
+    font-weight: 100;
+    line-height: 1.5vh;
+    letter-spacing: 10px;
+}
+.woman-wom{
+    color: #515076;
+    font-size: 6rem;
+    font-weight: 200;
+    line-height: 1vh;
+    letter-spacing: 10px;
+}
+.woman-text{
+    color: #888794;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 3vh;
+    margin-bottom: 100px;
+}
+
+.advise {
+    width: 100%;
+    display: flex; /* Используем flexbox для контейнера советов */
+    justify-content: space-between; /* Равномерно распределяем пространство между блоками */
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+.advises {
+    position: relative; /* Добавляем позиционирование для псевдоэлемента */
+    width: 23%; /* Ширина каждого блока совета */
+    text-align: left;
+    background-color: #F7F7FA;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; /* Используем flexbox для внутренних элементов */
+    flex-direction: column; /* Выстраиваем элементы в столбец */
+    justify-content: space-between; /* Равномерно распределяем пространство между внутренними элементами */
+    margin-bottom: 200px;
+}
+
+.advises::before {
+    content: ""; /* Создаем пустой контент для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование относительно родительского элемента */
+    top: 0; /* Располагаем псевдоэлемент сверху */
+    left: 0;
+    width: 100%; /* Ширина равна ширине родительского элемента */
+    height: 5px; /* Высота полоски */
+    background-color: #515076; /* Цвет полоски */
+    border-radius: 20px 20px 0 0; /* Скругляем углы только сверху */
+}
+
+.advises .advise-title {
+    color: #A5A3B9;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.advises .advise-tt {
+    color: #515076;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.advises .advise-opis {
+    color: #888794;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.advises .advise-btn {
+    max-width: 50px;
+    background-color: #515076;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.menu-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.menu-img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.link-item{
+    padding-right: 40px;
+}
+.link-item:last-child .menu-img {
+    padding-right: 0;
+}
+.advise-btn:hover {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+}
+
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    text-align: center;
+    background-color: #F7F7FA;
+    margin-left: 30%; /* Возвращаем левый отступ */
+    margin-right: 30%; /* Возвращаем правый отступ */
+    margin-bottom: 5%;
+    border-bottom: 1px solid #515076;
+    border-radius: 5px ;
+}
+
+.contact {
+    text-align: center;
+    background-size: cover; /* Масштабировать изображение так, чтобы оно полностью покрывало блок */
+    background-position: center;
+}
+
+.contact-title {
+    color: #757AA5;
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.contact-num {
+    color: #828282;
+    font-size: 1.7rem;
+    line-height: 3vh;
+}
+
+
+.contact-adress {
+    color: #828282;
+    font-size: 1.7rem;
+    line-height: 3vh;
+}
+.footer{
+    background-color: #EDECF6;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-size: 1.5rem;
+}
+
+.footer-title{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.footer-inner{
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1450px){
+    .nav{
+        font-size: 1.5rem;
+    }
+    .woman-test{
+        font-size: 2.6rem;
+        line-height: 6vh;
+        margin-top: 50px;
+        letter-spacing: 5px;
+    }
+    .woman-num{
+        font-size: 9rem;
+        line-height: 2.5vh;
+    }
+    .woman-wom{
+        font-size: 5rem;
+        line-height: 2.5vh;
+    }
+    .woman-text{
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+    }
+    .sub-title{
+        font-size: 1.4rem;
+        line-height: 3vh;
+    }
+}
+@media (max-width: 1350px){
+    .product {
+        width: 40%; /* Задаем ширину карточки */
+        margin: 40px; /* Задаем отступы между карточками */
+        padding: 10px; /* Задаем внутренние отступы */
+    }    
+    .product-image {
+        width: 100%; /* Ширина изображения товара */
+        height: 300px;
+        border-radius: 50px; /* Скругление углов */
+    }
+    .menu-img{
+        margin-left: 20px;
+    }
+    .title-2{
+        font-size: 3.5rem;
+    }
+    .sub-title {
+        line-height: 3vh;
+    }
+    .nav{
+        font-size: 1.6rem;
+    }
+    .contacts {
+        height: 30vh;
+        width: 45%;
+    }
+    .title-girl {
+        position: relative;
+        top: -180px; /* Измените это значение в соответствии с вашими потребностями */
+    }
+    .woman-test{
+        font-size: 2.3rem;
+        line-height: 3vh;
+        margin-top: 50px;
+        letter-spacing: 6px;
+    }
+    .woman-num{
+        font-size: 9rem;
+        line-height: 3.5vh;
+    }
+    .woman-wom{
+        font-size: 5rem;
+        line-height: 3.5vh;
+    }
+    .woman-text{
+        font-size: 1.5rem;
+        line-height: 2vh;
+    }
+}
+
+@media (max-width: 1150px){
+    .product {
+        width: 40%; /* Задаем ширину карточки */
+        margin: 40px; /* Задаем отступы между карточками */
+        padding: 10px; /* Задаем внутренние отступы */
+    }    
+    .product-image {
+        width: 100%; /* Ширина изображения товара */
+        height: 300px;
+        border-radius: 50px; /* Скругление углов */
+    }
+    .advises .advise-title {
+        font-size: 2rem;
+    }
+    
+    .advises .advise-tt {
+        font-size: 2.5rem;
+    }
+    
+    .advises .advise-opis {
+        font-size: 1.2rem;
+    }
+    .advises .advise-btn {
+        font-size: 1.5rem;
+    }
+    .title-btn {
+        font-size: 1.8rem;
+        line-height: 1;
+        padding: 40px 60px;
+        letter-spacing: 2px;
+    }
+    .menu-img{
+        margin-left: 20px;
+    }
+    .woman-test{
+        font-size: 2rem;
+        line-height: 3vh;
+        letter-spacing: 4px;
+    }
+    .woman-num{
+        font-size: 10rem;
+        line-height: 2vh;
+    }
+    .woman-wom{
+        font-size: 6rem;
+        line-height: 1.5vh;
+    }
+    .woman-text{
+        font-size: 1.5rem;
+        line-height: 3vh;
+    }
+    .title-2{
+        font-size: 4rem;
+    }
+    .contacts {
+        height: 27vh;
+        width: 45%;
+    }
+    .sub-title {
+        font-size: 1.5rem;
+        line-height: 2.3vh;
+    }
+    .nav{
+        font-size: 1.4rem;
+    }
+    .title-girl {
+        position: relative;
+        top: -140px; /* Измените это значение в соответствии с вашими потребностями */
+    }
+    .footer{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 910px){
+    .product {
+        width: 50%; /* Задаем ширину карточки */
+        margin: 40px; /* Задаем отступы между карточками */
+        padding: 10px; /* Задаем внутренние отступы */
+    }    
+    .product-image {
+        width: 100%; /* Ширина изображения товара */
+        height: 200px;
+    }
+    .advises .advise-title {
+        font-size: 2.5rem;
+    }
+    
+    .advises .advise-tt {
+        font-size: 2.8rem;
+    }
+    
+    .advises .advise-opis {
+        font-size: 2.5rem;
+    }
+    .advises .advise-btn {
+        font-size: 1.5rem;
+    }
+    .title-btn {
+        font-size: 1.7rem;
+        line-height: 1;
+        padding: 35px 55px;
+        letter-spacing: 2px;
+    }
+    .title-2{
+        font-size: 4.5rem;
+        line-height: 10vh;
+    }
+    .sub-title {
+        font-size: 1.8rem;
+        line-height: 2vh;
+    }
+    .link-item{
+        padding-right: 20px;
+    }
+    .menu-img{
+        width: 20px;
+        height: 20px;
+    }
+    .contacts {
+        height: 25vh;
+        width: 45%;
+    }
+    .advise {
+        justify-content: space-around; /* Изменяем распределение блоков на экранах меньше 768px */
+    }
+    .advises {
+        flex-basis: 40%; /* Уменьшаем ширину блоков на маленьких экранах */
+    }
+    .nav{
+        font-size: 1.3rem;
+    }
+    .title-girl {
+        position: relative;
+        top: -100px; /* Измените это значение в соответствии с вашими потребностями */
+    }
+}
+@media (max-width: 690px){
+    .basket-btn {
+        width: 20px; /* Примерная ширина кнопки при сжатии экрана */
+        height: 20px; /* Примерная высота кнопки при сжатии экрана */
+        padding: 10px; /* Примерный внутренний отступ кнопки при сжатии экрана */
+    }
+    .title-btn {
+        font-size: 2rem;
+        line-height: 1;
+        padding: 25px 45px;
+        letter-spacing: 2px;
+        margin-top: -50px;
+    }
+    .woman-test{
+        letter-spacing: 4px;
+        font-size: 1.7rem;
+        line-height: 2vh;
+    }
+    .woman-num{
+        font-size: 9rem;
+        line-height: 0.5vh;
+    }
+    .woman-wom{
+        font-size: 5rem;
+        line-height: 0.5vh;
+    }
+    .woman-text{
+        font-size: 1.5rem;
+        line-height: 1.5vh;
+    }
+    .title-2{
+        font-size: 5rem;
+        line-height: 5vh;
+    }
+    .link-item{
+        padding-right: 15px;
+    }
+    .advises .advise-title {
+        font-size: 2rem;
+    }
+    
+    .advises .advise-tt {
+        font-size: 2.5rem;
+    }
+    
+    .advises .advise-opis {
+        font-size: 2rem;
+    }
+    .menu-img{
+        width: 15px;
+        height: 15px;
+    }
+    .contacts {
+        height: 20vh;
+        width: 45%;
+    }
+    .advise {
+        justify-content: space-around; /* Изменяем распределение блоков на экранах меньше 768px */
+    }
+    .advises {
+        flex-basis: 45%; /* Уменьшаем ширину блоков на маленьких экранах */
+    }
+    .nav{
+        font-size: 1.2rem;
+    }
+    .title-girl {
+        position: relative;
+        top: -100px; /* Измените это значение в соответствии с вашими потребностями */
+    }
+    .footer{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 600px){
+    .title-girl {
+        position: relative;
+        top: -70px; /* Измените это значение в соответствии с вашими потребностями */
+    }
+    .woman-test{
+        font-size: 1.5rem;
+        line-height: 2vh;
+        margin-top: 50px;
+        letter-spacing: 4px;
+    }
+    .woman-num{
+        font-size: 9rem;
+        line-height: 0.5vh;
+    }
+    .woman-wom{
+        font-size: 5rem;
+        line-height: 0.5vh;
+    }
+    .woman-text{
+        font-size: 1.5rem;
+        line-height: 2vh;
+    }
+}

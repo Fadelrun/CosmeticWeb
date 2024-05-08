@@ -1,0 +1,157 @@
+body{
+    font-family: 'Monsterrat', sans-serif;
+    background: url(../img/bg.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.container{
+    max-width: 1390px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #EDECF6;
+    padding-top: 12px;
+    padding-bottom: 21px;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Устанавливаем z-index, чтобы заголовок оставался поверх других элементов */
+}
+
+.logo{
+    padding-right: 85px;
+}
+.nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    padding-right: 40px;
+}
+.nav-item:hover {
+    color: #aaa8f0; /* Яркий цвет при наведении */
+    transition: color 0.5s;
+}
+.menu-form {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+.form-item:hover {
+    color: #aaa8f0; /* Яркий цвет при наведении */
+    transition: color 0.5s;
+}
+.form-item{
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+.menu-item:last-child .menu-img {
+    padding-right: 0;
+}
+.form-item:last-child .menu-img {
+    padding-right: 0;
+}
+.basket-btn{
+  background-color: white;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    color: #515076;
+}
+
+main{
+    flex-grow: 1;
+}
+.container-title{
+    width: 100%;
+}
+.form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vh;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 50px auto 0; /* Центрирование блока по горизонтали и добавление отступа сверху */
+}
+
+
+form {
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 1em; /* Отступ снизу заголовка 1em */
+    color: #515076;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1em; /* Внутренние отступы 1em */
+    margin-bottom: 1em; /* Отступ снизу элементов ввода 1em */
+    border: 1px solid #ccc;
+    border-radius: 0.5em; /* Скругление углов */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 1em; /* Внутренние отступы 1em */
+    background-color: #515076;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em; /* Скругление углов */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a3a5f;
+} 
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #EDECF6;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 200;
+    padding: 10px;
+}
