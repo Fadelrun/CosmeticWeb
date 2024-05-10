@@ -136,6 +136,7 @@ main{
     font-weight: 100;
 }
 
+
 .product-description {
     font-size: 1.3em; 
     color: #888794;
@@ -250,12 +251,12 @@ main{
     direction: rtl;
     text-align: center;
     position: relative;
-    margin-top: 10px; /* Добавляем отступ сверху */
-    margin-bottom: 10px; /* Добавляем отступ снизу */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
 }
 .rating > span {
     display: inline-block;
-    padding: 0 5px; /* Добавляем отступы слева и справа */
+    padding: 0 5px; 
     font-size: 2em;
     line-height: 1;
     cursor: pointer;
@@ -269,7 +270,7 @@ main{
 }
 .rating-title {
     text-align: left;
-    margin-bottom: 5px; /* Добавляем отступ снизу */
+    margin-bottom: 5px; 
 }
 .review-item {
     margin-bottom: 10px;
@@ -306,6 +307,41 @@ main{
     max-width: 100%;
     height: auto;
 }
+/*
+.form-container{
+    filter: blur(6px); 
+}
+#review-form input[type="text"],
+#review-form textarea,
+#review-form button,
+#review-form input[type="file"],
+#review-form .rating-title,
+#review-form .star {
+    pointer-events: none; 
+}
+.buttons {
+    text-align: center; 
+    margin-top: 20px; 
+    position: relative; 
+    top: 350px;
+    right: 30px;
+    z-index: 1; 
+}
+
+.buttons button {
+    padding: 15px 35px;
+    margin: 0 10px;
+    background-color:#515076;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.buttons button:hover {
+    background-color: #757AA5;
+}*/
 
 .footer{
     background-color: #EDECF6;
