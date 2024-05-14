@@ -10,6 +10,9 @@ body{
     max-width: 1390px;
     margin: 0 auto;
 }
+.menu-btn{
+    display: none;
+}
 .header {
     background-color: #EDECF6;
     padding-top: 2%;
@@ -35,6 +38,8 @@ li{
 }
 
 .logo{
+    display: inline-block; /* Размещаем лого в том же ряду */
+    vertical-align: middle;
     padding-right: 85px;
 }
 .nav{
@@ -46,9 +51,17 @@ li{
 
 .menu{
     display: flex;
+    align-items: center;
     flex-grow: 0;
     flex-basis: 1;
     justify-content: flex-start;
+}
+.nav-item:last-child {
+    margin-right: 20px;
+}
+
+.form-item:first-child {
+    margin-right: 20px;
 }
 
 .nav-item{
@@ -72,30 +85,31 @@ li{
 }
 
 .basket-btn {
+    display: inline-block;
+    vertical-align: middle;
     background-color: white;
     border-radius: 30%;
-    padding: 15px;
-    width: 40%;
-    height: 40%;
+    padding: 10px;
+    width: 40%; 
+    height: 40%; 
 }
-
 
 /* Иконка внутри кнопки */
 .basket-btn img {
-    display: block; /* Делаем изображение блочным элементом */
-    width: 100%; /* Ширина изображения равна 100% ширины родительского контейнера */
-    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
-    margin: 0 auto; /* Выравниваем изображение по центру кнопки */
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 .animated {
     opacity: 0;
-    transform: translateY(50px); /* Начальное положение элемента перед анимацией */
+    transform: translateY(50px); 
     transition: opacity 1s, transform 1s;
 }
 
 .animated.active {
     opacity: 1;
-    transform: translateY(0); /* Конечное положение элемента после анимации */
+    transform: translateY(0); 
 }
 .title{
    text-align: center;
@@ -398,8 +412,8 @@ li{
 
 .footer-title{
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.4vh;
+    font-size: 2rem;
+    line-height: 1.3vh;
     font-weight: 200;
     padding: 20px;
 }
@@ -556,6 +570,93 @@ li{
     }
 }
 @media (max-width: 910px){
+    .menu-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        order: 1;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 50;
+        margin-right: 20px;
+        z-index: 1000;
+    }
+    .logo{
+        position: relative;
+        z-index: 1001;
+        margin-left: 20px;
+    }
+    .btn-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color:#515076;
+        height: 3px;
+        transition: .3s ease;
+    }
+    .btn-line:nth-child(1){
+        top: 0;
+    }
+    .btn-line:nth-child(2){
+        top: 20px;
+    }
+    .btn-line:nth-child(3){
+        top: 20px;
+    }
+    .btn-line:nth-child(4){
+        top: 40px;
+    }
+    .menu-open .btn-line:nth-child(1){
+        transform: scale(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scale(0);
+    }
+    .iphone-news{
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #EDECF6;
+        display: flex;
+        justify-content: center; /* Выравнивание по горизонтали */
+        align-items: center; /* Выравнивание по вертикали */
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: .3s ease;
+        z-index: 1000;
+        padding: 10px;
+    }
+    
+    .menu-open .menu {
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .nav-item,
+    .form-item {
+        margin: 10px 0;
+        display: block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 3.5rem;
+    }
+    .basket-btn {
+        width: 80%; 
+        height: 80%; 
+    }
     .product {
         width: 50%; /* Задаем ширину карточки */
         margin: 40px; /* Задаем отступы между карточками */
