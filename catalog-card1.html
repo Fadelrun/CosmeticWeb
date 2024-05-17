@@ -88,10 +88,6 @@
                     </div>  
             </div>
     </section>
-    <div class="buttons">
-        <a href = "registration.html"><button class="register-btn">Зарегистрироваться</button></a>
-        <a href = "sign-in.html"><button class="login-btn">Войти</button></a>
-    </div>
     <div id="review-form" class="form-container">
         <div class="overlay"></div>
         <form class="review-form" id="review-form">
@@ -99,7 +95,7 @@
             <label for="review-name">Имя:</label>
             <input type="text" id="review-name" placeholder="Напиши свое имя" required>
             <label for="review-text">Отзыв:</label>
-            <textarea id="review-text" placeholder="Напиши свой отзыв" required disabled></textarea>
+            <textarea id="review-text" placeholder="Напиши свой отзыв" required></textarea>
             <div class="rating-title">Оценка:</div>
             <div class="rating">
                 <span class="star" data-value="5">&#9733;</span>
@@ -108,23 +104,13 @@
                 <span class="star" data-value="2">&#9733;</span>
                 <span class="star" data-value="1">&#9733;</span>
             </div>
-            <input type="file" id="review-image" accept="image/*" multiple style="display:none;" disabled>
+            <input type="file" id="review-image" accept="image/*" multiple style="display:none;" >
             <label for="review-image" class="upload-label">Загрузить фото</label>
             <span id="selected-files"></span>
-            <button type="button" id="submit-review" disabled>Отправить</button>
+            <button type="button" id="submit-review">Отправить</button>
             <div class="reviews blocked">
                 <div class="container">
                     <h3>Отзывы</h3>
-                    <div id="review-list">
-                        <div class="review-item">
-                            <p class="review-author">Андрей</p>
-                            <p class="review-text">Товар очень крутой и пришел быстро! Спасибо большое за вашу работу!</p>
-                            <a href=""><img src="img/jar1.svg" alt="Товар 1" ></a>
-                            <div class="review-buttons">
-                                <a href="#" class="edit-review-btn">Изменить</a>
-                                <a href="#" class="delete-review-btn">Удалить</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
